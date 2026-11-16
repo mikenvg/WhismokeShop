@@ -160,6 +160,4 @@ Whismoke Shop/
 
 La interfaz y la API ya están conectadas, pero esta sigue siendo una práctica
 educativa: el almacén JSON no sustituye a una base de datos para concurrencia y
-crecimiento, y el servidor de desarrollo de PHP no es para producción. Antes de
-publicar, configura HTTPS, revisa la seguridad de las sesiones y las peticiones
-y usa un almacenamiento de producción. No publiques contraseñas, archivos de datos ni claves privadas.
+crecimiento, y el servidor de desarrollo de PHP no es para producción.
