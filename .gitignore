@@ -1,0 +1,22 @@
+# Dependencias instaladas localmente
+node_modules/
+vendor/
+
+# Configuración y datos privados
+.env
+.env.*
+!.env.example
+/whismoke-data/
+/data/
+/api/data/
+*.sqlite
+*.sqlite3
+
+# Archivos temporales y del sistema
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
+Desktop.ini
+
