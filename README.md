@@ -137,6 +137,38 @@ las cestas y pedidos para que las reservas antiguas no contradigan el nuevo
 stock; conserva los usuarios y mensajes. Esta migración afecta al almacén
 existente, así que debe hacerse deliberadamente.
 
+## Instalación de PHP en Linux (Ubuntu)
+
+Actualiza los repositorios e instala PHP 8.5:
+
+```bash
+sudo apt update
+sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:ondrej/php -y
+sudo apt update
+sudo apt install php8.5-cli php8.5-common -y
+```
+
+Comprueba la instalación:
+
+```bash
+php -v
+```
+
+## Preparar y ejecutar la tienda
+
+Desde una terminal, en la carpeta raíz del proyecto:
+
+```bash
+export WHIS_MOKE_ADMIN_EMAIL="admin@whismoke.es"
+export WHIS_MOKE_ADMIN_PASSWORD="WhismokeAdmin2026!"
+
+php api/setup.php
+php -S localhost:8000
+```
+
+Abre el navegador y accede a `http://localhost:8000` para comprobar que la tienda funciona correctamente.
+
 ## Estructura
 
 ```text
